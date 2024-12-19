@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Complete! - MANÜ Professional</title>
+    <meta name="description" content="Transform your practice with MANÜ Professional.">
+    <link rel="canonical" href="https://professional.manutelehealth.com/complete">
+    <meta property="og:title" content="Purchase Complete! - MANÜ Professional">
+    <meta property="og:description" content="Transform your practice with MANÜ Professional.">
+    <meta property="og:image" content="https://manutelehealth.com/images/social-share-image.jpg">
+    <meta property="og:url" content="https://professional.manutelehealth.com/complete">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Purchase Complete! - MANÜ Professional">
+    <meta name="twitter:description" content="Transform your practice with MANÜ Professional.">
+    <meta name="twitter:image" content="https://manutelehealth.com/images/social-share-image.jpg">
+    <meta name="twitter:url" content="https://professional.manutelehealth.com/complete">
+    <meta name="robots" content="index, follow">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "MANÜ Telehealth",
+      "url": "https://manutelehealth.com",
+      "description": "Transform your practice with MANÜ Professional.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "MANÜ Telehealth",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://manutelehealth.com/images/manu-inverted.png"
+        }
+      }
+    }
+    </script>
+    <link rel="icon" href="https://manutelehealth.com/images/cropped-favicon-192x192.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .message {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            display: none;
+        }
+
+        .message p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .message a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #39bad8;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .message a:hover {
+            background-color: #33a0c1;
+        }
+
+        .progress-container {
+            width: 100%;
+            background-color: #e0e0e0;
+            border-radius: 0px;
+            margin-bottom: 20px;
+            height: 25px;
+        }
+
+        .progress-bar {
+            width: 75%; /* Starting width */
+            height: 100%;
+            background-color: #39bad8; /* Blue color */
+            border-radius: 0px;
+            text-align: center;
+            line-height: 25px; /* Center the text vertically */
+            color: white;
+            transition: width 1s ease-in-out, background-color 1s ease-in-out; /* Add transition for width and background color */
+        }
+        /* Add animation keyframes */
+        @keyframes progressAnimation {
+            from {
+                width: 75%;
+                background-color: #39bad8;
+            }
+            to {
+                width: 100%;
+                background-color: #32CD32; /* Green color */
+            }
+        }
+    </style>
+    <!-- Hotjar Tracking Code for Manü Telehealth -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3635830,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="header">
+        <a href="https://manutelehealth.com" id="home-link">
+            <img src="https://manutelehealth.com/images/manu-inverted.png" alt="MANÜ Telehealth Logo">
+        </a>
+        <p id="encouragement-text" class="encouragement">Your Purchase is Complete!</p>
+    </div>
+    
+    <div class="content">
+        <div class="message" id="congratsMessage">
+            <p>Congratulations!</p>
+            <p>You have successfully completed your purchase.</p>
+            <hr width="50%" color= "#39bad8">
+            <p>You may now close this tab.</p>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2024 MANÜ Telehealth | Developed by <a href="https://mavenx.co">Maven X LLC</a> | All Rights Reserved
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.2/dist/confetti.browser.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Function to show confetti animation
+        function showConfetti() {
+            const duration = 5 * 1000;
+            const end = Date.now() + duration;
+
+            (function frame() {
+                confetti({
+                    particleCount: 2,
+                    angle: 60,
+                    spread: 55,
+                    origin: { x: 0 }
+                });
+                confetti({
+                    particleCount: 2,
+                    angle: 120,
+                    spread: 55,
+                    origin: { x: 1 }
+                });
+
+                if (Date.now() < end) {
+                    requestAnimationFrame(frame);
+                }
+            }());
+        }
+
+        // Show confetti and message when the page loads
+        showConfetti();
+        document.getElementById('congratsMessage').style.display = 'block';
+    });
+</script>
+</body>
+</html>

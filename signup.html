@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - MANÜ Professional</title>
+    <meta name="description" content="Transform your practice with MANÜ Professional.">
+    <link rel="canonical" href="https://professional.manutelehealth.com/signup">
+    <meta property="og:title" content="Signup - MANÜ Professional">
+    <meta property="og:description" content="Transform your practice with MANÜ Professional.">
+    <meta property="og:image" content="https://manutelehealth.com/images/social-share-image.jpg">
+    <meta property="og:url" content="https://professional.manutelehealth.com/signup">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Signup - MANÜ Professional">
+    <meta name="twitter:description" content="Transform your practice with MANÜ Professional.">
+    <meta name="twitter:image" content="https://manutelehealth.com/images/social-share-image.jpg">
+    <meta name="twitter:url" content="https://professional.manutelehealth.com/signup">
+    <meta name="robots" content="index, follow">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "MANÜ Telehealth",
+      "url": "https://manutelehealth.com",
+      "description": "Transform your practice with MANÜ Professional.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "MANÜ Telehealth",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://manutelehealth.com/images/2023-08-manu-main.jpg"
+        }
+      }
+    }
+    </script>
+    <link rel="icon" href="https://manutelehealth.com/images/cropped-favicon-192x192.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <!-- Hotjar Tracking Code for Manü Telehealth -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3635830,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="header">
+        <a href="https://professional.manutelehealth.com" id="home-link">
+            <img src="https://manutelehealth.com/images/manu-inverted.png" alt="MANÜ Telehealth Logo">
+        </a>
+    </div>
+    <div class="content">
+        <h2>Sign Up for MANÜ Professional</h2>
+        <p style="text-align:center;">Select the plan that fits your practice and complete the form below to get started.</p>
+
+    <div class="form-and-plans-container">
+        <form id="signup-form" class="modern-form">
+            <!-- Section 1: Practice Information -->
+            <fieldset class="modern-fieldset">
+                <legend>Practice Information</legend>
+                <div class="form-row">
+                    <input type="text" id="practiceName" name="practiceName" placeholder="Practice Name*" required>
+                </div>
+                <div class="form-row">
+                    <input type="text" id="contactFirstName" name="contactFirstName" placeholder="Primary Contact First Name*" required>
+                    <input type="text" id="contactLastName" name="contactLastName" placeholder="Primary Contact Last Name*" required>
+                </div>
+                <div class="form-row">
+                    <input type="email" id="contactEmail" name="contactEmail" placeholder="Contact Email*" required>
+                    <input type="tel" id="contactPhone" name="contactPhone" placeholder="Contact Phone*" required>
+                </div>
+            </fieldset>
+
+            <!-- Plan Selection -->
+            <fieldset class="modern-fieldset">
+                <legend>Select Your Plan</legend>
+                <section class="product-grid" id="plan-grid">
+                    <!-- Care Plan Card -->
+                    <div class="product-card" data-plan="Care Plan" data-monthly="199" data-annual="179">
+                        <h3>Care Plan</h3>
+                        <strong class="plan-price">$179/mo</strong>
+                        <p class="total-billed">Total billed now: $2,148</p>
+                        <p>Ideal for small practices just getting started.</p>
+                        <ul>
+                            <li>~35 Patient/mo*<br></li>
+                            <li>5 User Limit</li>
+                            <li>500 SMS/mo included</li>
+                            <li>500 emails/mo included</li>
+                        </ul>
+                    </div>
+
+                    <!-- Essential Plan Card -->
+                    <div class="product-card selected" data-plan="Essential Plan" data-monthly="299" data-annual="269">
+                        <h3>Essential Plan</h3>
+                        <strong class="plan-price">$269/mo</strong>
+                        <p class="total-billed">Total billed now: $3,228</p>
+                        <p>Perfect for established practices needing more outreach.</p>
+                        <ul>
+                            <li>~142 Patient/mo*<br></li>
+                            <li>10 User Limit</li>
+                            <li>2,000 SMS/mo included</li>
+                            <li>2,000 emails/mo included</li>
+                        </ul>
+                    </div>
+
+                    <!-- Specialist Plan Card -->
+                    <div class="product-card" data-plan="Specialist Plan" data-monthly="399" data-annual="359">
+                        <h3>Specialist Plan</h3>
+                        <strong class="plan-price">$359/mo</strong>
+                        <p class="total-billed">Total billed now: $4,308</p>
+                        <p>For specilists manging larger numbers of patients.</p>
+                        <ul>
+                            <li>~357 Patient/mo*<br></li>
+                            <li>10 User Limit</li>
+                            <li>5,000 SMS/mo included</li>
+                            <li>5,000 emails/mo included</li>
+                        </ul>
+                    </div>
+                </section>
+                <input type="hidden" id="selectedPlan" name="plan" value="Essential Plan">
+                <p><i style="font-size: 12px;">*Patient count varies based on selected templates</i></p>
+            </fieldset>
+
+            <!-- Billing Preferences -->
+            <fieldset class="modern-fieldset">
+                <legend>Billing Preferences</legend>
+                <label class="modern-radio">
+                    <input type="radio" name="billingCycle" value="Monthly"> Monthly
+                </label>
+                <label class="modern-radio">
+                    <input type="radio" name="billingCycle" value="Annual" checked> Annual (Get a discount!)
+                </label>
+            </fieldset>
+
+            <!-- CAPTCHA / Turnstile -->
+            <div class="button-container">
+                <div class="cf-turnstile" data-sitekey="1x00000000000000000000AA" data-callback="onTurnstileVerified"></div>
+                <button type="submit" class="modern-submit-button">Submit & Continue to Payment</button>
+            </div>
+        </form>
+    </div>
+
+        <!-- Messages -->
+        <p id="loading-message" class="message info" style="display: none;">Processing your request...</p>
+        <p id="success-message" class="message success" style="display: none;">Success! Redirecting to payment...</p>
+        <p id="error-message" class="message error" style="display: none;">An error occurred. Please try again.</p>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2024 MANÜ Telehealth |
+        Developed by <a href="https://mavenx.co">Maven X LLC</a> |
+        All Rights Reserved
+    </div>
+
+    <script src="javascript/scripts.js"></script>
+</body>
+</html>
